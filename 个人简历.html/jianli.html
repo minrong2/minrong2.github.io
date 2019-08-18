@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+     <meta charset="UTF-8">
+     <title>敏荣</title>
+     <style>
+         * {
+             box-sizing: border-box;
+         }
+        body{
+            background: #ffffff;
+            font-family: Arial;
+            margin: 0;
+            display: block;
+            font-size: 14px;
+        }
+        header{
+            background: url(img/banner.jpg)0px 0px;
+            width: 100%;
+            height: 1000px;
+            display: block;
+            padding: 160px 0;
+            background-size:cover;
+        }
+        .container{
+            padding-right: 250px;
+            padding-left: 250px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .header-matter{
+            height: 190px;
+        }
+        .logo-header{
+            float: left;
+            width: 50%;
+            height: 190px;
+        }
+        .img-responsive {
+            display:inline-block;
+            max-width: 100%;
+            height: auto;
+        }
+        .img-one{
+            height: 190px;
+            width: 188px;
+        }
+        img.clock,.clock-item{margin: 0 auto;}
+
+        .logo-header p{
+            padding: 40px 0;
+            margin: 0;
+            color: #F4FE3F;
+            font-size: 2em;
+            font-weight: 300;
+        }
+        .header-grid{
+            float: left;
+            width: 35%;
+            padding: 0 3px;
+        }
+        .grid-men,.tv-portfolio{
+            padding: 30px 0;
+        }
+        .men h6,.grid-tv h6,.grid-me h6{
+            color: #fff;
+            font-size: 2em;
+            padding-bottom: 5px;
+            margin: 0;
+            text-transform: uppercase;
+        }
+        .grid-header{
+            height: 190px;
+        }
+        .grid-tv,.men{
+            float: left;
+            width: 16.66%;
+            text-align: center;
+            background: #AC3BD4;
+            height: 190px;
+        }
+        .men {
+            width: 48%;
+        }
+        .grid-head-contact{
+            height: 190px;
+        }
+        .grid-msg{
+            float: left;
+            width: 17%;
+        }
+        .grid-me{
+            float: left;
+            width: 17%;
+            text-align: center;
+            background: #AC3BD4;
+            height: 190px;
+            display: inline-block;
+            padding: 30px 0;
+        }
+        .grid-pic{
+            float: right;
+        }
+        .grid-se{
+            float: left;
+            width: 17%;
+            visibility:hidden;
+        }
+         .grid-tv:hover,.men:hover,.grid-me:hover{ background:#ECFC00	; }
+         .up{
+             text-align: center;
+             padding: 9em 0;
+         }
+         .up-grid{
+             vertical-align: middle;
+             border: 0px;
+         }
+        nav {
+            background:#AC3BD4;
+            height: 100px;
+            width: 100%;
+        }
+        .logo-style{
+            width: 100px;
+            height: 100px;
+            padding: 10px 10px 30px 10px;
+        }
+        .nav-logo {
+            float: left;
+            margin: 10px 300px 10px 200px;
+        }
+        nav ul{
+            float: right;
+            margin: 20px 100px;
+        }
+         nav ul li{
+             float: left;
+             display: inline-block;
+             padding: 20px;
+             font-family: Arial;
+             font-size: 2em;
+             color: #F4FE3F;
+         }
+         nav ul li a{
+             color: #F4FE3F;
+             text-decoration: none;
+         }
+         .conter {
+             padding-right: 15px;
+             padding-left: 15px;
+             margin-right: auto;
+             margin-left: auto;
+         }
+         article h1{
+             font-size:3em;
+             font-weight:600;
+             text-align: center;
+             color: #AC3BD4;
+             text-transform: uppercase;
+             border-bottom: 1px solid #BBBBBB;
+             width:35%;
+             margin: 15px auto;
+             padding: 20px;
+         }
+         .about{
+             padding:30px;
+             height: 700px;
+         }
+         .about-one{
+             float: left;
+             width: 56%;
+             padding: 10px 20px;
+         }
+         article section aside img{
+             display: block;
+             width: 100%;
+             height: auto;
+         }
+         .about p {
+             font-size: 1.5em;
+             color: #414141;
+             margin: 0;
+             font-weight: 300;
+         }
+
+         .about-two{
+             float: left;
+             width: 42%;
+             padding: 20px 100px;
+         }
+         .about h5{
+             font-size: 2.5em;
+             color: #000;
+             margin: 0;
+         }
+         .about-skills{
+             padding: 2em 0 2.5em;
+         }
+         .about-green h6{
+             font-size: 1.5em;
+             color: #414141;
+             margin: 0;
+             text-transform: uppercase;
+         }
+         .content-green{
+             width: 100%;
+             margin: 18px auto;
+             background: #D7DEE0;
+             height: 22px;
+             border-radius: 25px;
+         }
+         .content-green > div {
+             height: 100%;
+             display: block;
+             background: #F4FE3F;
+             border-radius: 25px;
+         }
+         a.more{
+             color: #AC3BD4;
+             font-size: 1.6em;
+             border:2px solid #AC3BD4;
+             border-radius: 50px;
+             padding: 0.6em 1.8em;
+             text-decoration: none;
+
+         }
+         a.more:hover{
+             background: #AC3BD4;
+             color: #fff;
+             border:2px solid #AC3BD4;
+         }
+         .about-us{
+             background: #AC3BD4;
+             padding: 5em 0 3em;
+         }
+         .us-top{
+             margin: 10px 50px
+         }
+         .about-us h3{
+             text-align: center;
+             font-size: 3em;
+             color: white;
+             border-bottom: 1px solid #BBBBBB;
+             width: 50%;
+             margin: 0 auto;
+             padding: 0 0 0.8em;
+         }
+         .about-us p{
+             font-size: 1.5em;
+             color: #F4FE3F;
+             margin: 0;
+             text-align: center;
+             font-weight: 300;
+             padding: 2em 0;
+         }
+         .grid-services{
+             width: 100%;
+             background: #EEEEEE;
+         }
+         .grid-services h3{
+             text-align: center;
+             font-size: 3em;
+             color: #EE6B9C;
+             border-bottom: 1px solid #CCCCCC;
+             width: 40%;
+             margin: 0 auto;
+             padding:30px;
+             padding-top: 50px;
+         }
+         .services-top{
+             margin: 20px 20px 20px 200px;
+             height: 600px;
+         }
+         .top-left{
+             float: left;
+             width: 48%;
+             margin: 10px 10px;
+             padding: 10px 10px;
+
+         }
+         .services-top h5{
+             font-size: 2.1em;
+             color: #EE6B9C;
+             padding: 0 0 0.5em;
+             margin-top: 30px;
+             margin-bottom: 20px;
+         }
+         .services-top p{
+             font-size: 1.3em;
+             color: #AC3BD4;
+             padding: 0 0;
+             margin: 0;
+         }
+         .grid-portfolio{
+             width: 100%;
+             height: 1200px;
+         }
+         .portfolio-top {
+             height: 250px;
+         }
+         .portfolio-top h3{
+             text-align: center;
+             font-size: 3em;
+             color: #EE6B9C;
+             border-bottom: 1px solid #BBBBBB;
+             width: 40%;
+             margin: 0 auto;
+             padding:30px;
+         }
+         .portfolio-top p{
+             font-size: 1.5em;
+             text-align: center;
+             margin: 0;
+             padding: 2em 0;
+             color: #AC3BD4
+         }
+         .photo-wall{
+             padding: 10px 100px;
+             margin-bottom: 25px;
+         }
+         .photo-tire{
+             height: 400px;
+         }
+         .photo-style{
+             float: left;
+             margin: 10px 28px;
+         }
+         .photo-none{
+         }
+         .photo-none h4{
+             font-size: 1.6em;
+             color: #fff;
+             margin:0;
+         }
+         .photo-none p{
+             font-size: 0.5em;
+             color: #fff;
+             margin: 0;
+             padding: 7px 0 0;
+         }
+         .back{
+             margin-left: 670px;
+         }
+         .contact{
+             height: 700px;
+             position: relative;
+             padding: 0 0 5em;
+             text-align: center;
+         }
+         .contact h3{
+             text-align: center;
+             font-size: 3em;
+             color: #EE6B9C;
+             border-bottom: 1px solid #BBBBBB;
+             width: 40%;
+             margin: 0 auto;
+             padding:30px;
+         }
+         form {
+             display: block;
+             margin-top: 0em;
+         }
+         .contact-top{
+             height: 500px;
+         }
+         .contact-left{
+             float: left;
+             width: 50%;
+             position: relative;
+             min-height: 1px;
+             padding-right: 15px;
+             padding-left: 15px;
+
+         }
+         form input {
+             float: left;
+             background: #EEEEEE;
+             margin: 20px 50px 20px 200px;
+             padding: 30px 150px;
+             border: none;
+             border-radius: 50px;
+             font-size: 1.5em;
+             color: #8D8B8B;
+         }
+         footer{
+             text-align:center;
+             padding: 30px;
+             height: 100px;
+         }
+         .footer-class{
+             float: left;
+         }
+         footer h4{
+             font-size:1.8em;
+             margin: 0;
+             color:#AAAAAA;
+         }
+         #top-btn{
+             position: fixed;
+             bottom: 30px;
+             right: 30px;
+             border: 1px none #CCCCCC;
+         }
+         .contact-left textarea{
+             background: #EEEEEE;
+             border: none;
+             outline: none;
+             padding: 0.9em;
+             width: 100%;
+             margin: 1em;
+             font-size: 1.4em;
+             color: #8D8B8B;
+             border-radius: 50px;
+             padding-bottom: 100px;
+         }
+
+     </style>
+</head>
+<body>
+      <header>
+            <div class="container">
+                <div class="header-matter">
+                    <div class="logo-header">
+                        <a href="#"><img class="img-responsive" src="img/logo.png"></a>
+                        <p>欢迎来到我的网页简历</p>
+                    </div>
+                    <div class="header-grid">
+                        <div class="men grid-men">
+                            <a  href="#about-us">
+                                <img class="img-responsive clock-item " src="img/men.png"/> </a>
+                            <h6>座右铭</h6>
+                        </div>
+                        <div class="men">
+                            <img class="img-responsive img-one" src="img/pic.jpg" style="height: 190px"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-header">
+                    <div class="grid-tv grid-men" style="border-right: 1px solid #B564D4">
+                        <a href="#portfolio"><img class="" src="img/tv.png"/></a>
+                        <h6>兴趣爱好</h6>
+                     </div>
+                    <div class="grid-tv tv-portfolio">
+                        <a  href="#services"><img class="img-responsive" src="img/pen.png"/></a>
+                        <h6>自我认识</h6>
+                    </div>
+                    <div class="grid-tv">
+                        <img class="img-responsive clock-item img-one" src="img/pic1.jpg"/>
+                    </div>
+                    <div class="grid-tv">
+                        <img class="img-responsive img-one" class="img-responsive" src="img/pic2.jpg"/>
+                    </div>
+                    <div class="grid-tv tv-portfolio">
+                        <a  href="#about"><img class="img-responsive" src="img/rou.png"/></a>
+                        <h6>关于</h6>
+                    </div>
+                    <div class="grid-tv">
+                        <img class="img-responsive img-one" src="img/pic3.jpg"/>
+                    </div>
+                </div>
+                <div class="grid-head-contact">
+                    <div class="grid-se">
+                        <img class="img-responsive img-one" src="img/lo.png"/>
+
+                    </div>
+                    <div class="grid-msg">
+                        <img class="img-responsive img-one" src="img/pic4.jpg"/>
+                    </div>
+                    <div class="grid-me">
+                        <a  href="#contact"><img class="img-responsive" src="img/me.png"/></a>
+                        <h6>信息</h6>
+                    </div>
+                    <div class="grid-pic">
+                        <img class="img-responsive img-one" src="img/pic5.jpg"/>
+                    </div>
+                </div>
+                <div class="up">
+                    <a  href="#about"><img class="up-grid" src="img/up.png"/></a>
+                </div>
+            </div>
+      </header>
+      <nav>
+          <div class="nav-logo">
+              <img class="logo-style" src="img/timg.png"/>
+          </div>
+          <ul>
+              <li class="active"><a href="#about">关于</a></li>
+              <li><a href="#services" class="scroll">自我认识</a></li>
+              <li><a href="#about-us" class="scroll">座右铭</a></li>
+              <li><a href="#portfolio" class="scroll">兴趣爱好</a></li>
+              <li><a href="#contact" class="scroll">信息</a></li>
+          </ul>
+      </nav>
+      <article class="conter">
+          <div id="about">
+          <h1>关于我</h1>
+          <section class="about">
+              <aside class="about-one">
+                  <img src="img/tt.jpg"/>
+                  <p>我是一个乐观向上，有目标，条理性的男生。</p>
+                  <p>做事认真，能吃苦耐劳,对工作有浓厚的兴趣，也相信自己能成为一名出色的前端开发工程师。</p>
+              </aside>
+              <aside class="about-two">
+                  <h5>my skills</h5>
+                  <div class="about-skills">
+                      <div class="about-green">
+                          <h6>office</h6>
+                          <div class="content-green">
+                              <div style="width:70%;" >
+                              </div>
+                          </div>
+                      </div>
+                      <div class="about-green">
+                          <h6>html 5</h6>
+                          <div class="content-green">
+                              <div style="width:60%;" >
+                              </div>
+                          </div>
+                      </div>
+                      <div class="about-green">
+                          <h6>photoshop</h6>
+                          <div class="content-green">
+                              <div style="width:60%;" >
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <a class="more" href="#">回到首页</a>
+              </aside>
+          </section>
+          </div>
+          <section class="about-us" id="about-us">
+                     <div class="us-top">
+                         <h3>送给自己及大家的一句话</h3>
+                         <p>很喜欢悟空传里的一句话：“负尽千重罪，练就不死心。”做人就应该坚持，笑到最后你就是冠军坚持说最易、做最难但我会努力，努力得到想要的生活。</p>
+                     </div>
+          </section>
+          <section class="grid-services" id="services">
+                <div class="conter">
+                     <h3>自我认识</h3>
+                     <div class="services-top">
+                         <div class="top-left">
+                             <h5>网页</h5>
+                             <p>很喜欢这方面，但还有很多不足。</p>
+                         </div>
+                         <div class="top-left">
+                             <h5>心理承受能力</h5>
+                             <p>总是很倒霉，练就了很强的承受能力。</p>
+                         </div>
+                         <div class="top-left">
+                             <h5>实验</h5>
+                             <p>遇到不懂的，我会去做几个小实验这样会记得比较牢固一些。</p>
+                         </div>
+                         <div class="top-left">
+                             <h5>运行速度</h5>
+                             <p>有点小慢，但认真起来连我自己都害怕。</p>
+                         </div>
+                         <div class="top-left">
+                             <h5>管理</h5>
+                             <p>平时有点乱，大约一个月收拾一次屋子，收拾一次能保持个二十几天。</p>
+                         </div>
+                         <div class="top-left">
+                             <h5>很有规律</h5>
+                             <p>作息生活非常讲究规律，不愿让别人等。</p>
+                         </div>
+                     </div>
+                 </div>
+          </section>
+          <section id="portfolio" class="grid-portfolio">
+                <div class="conter">
+                     <div class="portfolio-top">
+                         <h3>兴趣爱好</h3>
+                         <p>每个人都有自己的爱好，在繁忙嘈杂的城市中做自己喜欢的事，是多么美好的一件事。</p>
+                     </div>
+                     <div class="photo-wall">
+                        <div class="photo-tire">
+                            <div class="photo-style">
+                                <a href="#">
+                                    <img class="img-responsive grid-item" src="img/pi.jpg"/>
+                                    <div class="photo-none">
+                                        <h4>汽车</h4>
+                                        <p>酷炫的汽车，谁不爱看呢。</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="photo-style">
+                                <a href="#">
+                                    <img class="img-responsive grid-item" src="img/pi-1.jpg"/>
+                                    <div class="photo-none">
+                                        <h4>好奇</h4>
+                                        <p>好奇是作为生物的本能之一。</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="photo-style">
+                                <a href="#">
+                                    <img class="img-responsive grid-item" src="img/pi-2.jpg"/>
+                                    <div class="photo-none">
+                                        <h4>喜爱美好事物</h4>
+                                        <p>美好的事物有谁会不喜欢呢。</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="photo-style">
+                                <a href="#">
+                                    <img class="img-responsive grid-item" src="img/pi-3.jpg"/>
+                                    <div class="photo-none">
+                                        <h4>骑行</h4>
+                                        <p>又能锻炼身体，又能舒缓身心。</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div  class="photo-tire">
+                            <div class="photo-style">
+                                <a href="#">
+                                    <img class="img-responsive grid-item" src="img/pi-4.jpg"/>
+                                    <div class="photo-none">
+                                        <h4>寂静</h4>
+                                        <p>非常不喜欢吵闹，也不会和别人争吵。</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="photo-style">
+                                <a href="#">
+                                    <img class="img-responsive grid-item" src="img/pi-5.jpg"/>
+                                    <div class="photo-none">
+                                        <h4>抽风</h4>
+                                        <p>偶尔会短个路，思路已经飘向异次元空间。</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="photo-style">
+                                <a href="#">
+                                    <img class="img-responsive grid-item" src="img/pi-6.jpg"/>
+                                    <div class="photo-none">
+                                        <h4>拆装</h4>
+                                        <p>只要能拆的我都忍不住想拆。</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="photo-style">
+                                <a href="#">
+                                    <img class="img-responsive grid-item" src="img/pi-7.jpg"/>
+                                    <div class="photo-none">
+                                        <h4>摄影</h4>
+                                        <p>觉得有意义的画面真的有必要永久珍藏。</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="more back" href="#">回到首页</a>
+                </div>
+          </section>
+          <section class="contact" id="contact">
+              <div class="conter">
+                  <div>
+                      <h3>信息</h3>
+                      <p>&nbsp;</p>
+                  </div>
+                  <form>
+                      <div class="contact-top">
+                          <div class="contact-left">
+                              <input type="text" value="姓名:敏荣" >
+                              <input type="text" value="邮箱:3140282926@qq.com" >
+                              <input type="text" value="电话:18893117589" >
+                              <input type="text" value="籍贯:甘肃甘南" >
+                          </div>
+                          <div class="contact-left">
+                              <div class="contact-textarea">
+                                  <textarea cols="70" rows="8" vaule="" >留言:</textarea>
+                              </div>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+          </section>
+      </article>
+      <footer>
+          <div class="conter">
+              <a href="#">
+                  <h4 class="footer-class">谢谢观赏</h4></a>
+          </div>
+          <div id="top-btn">
+              <button><a href="#"><img src="img/arr.png"/></a></button>
+          </div>
+      </footer>
+</body>
+</html>
